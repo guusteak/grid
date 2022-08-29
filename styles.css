@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,500&display=swap');
 :root{
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed';
 }
 
 *{
@@ -61,6 +63,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-content: space-around;
 }
 
 .intro{
@@ -109,4 +112,23 @@ body{
 
 .first, .second, .fifth{
     color: white;
+}
+
+@media only screen and (max-width:500px){
+    body{
+        background: linear-gradient(90deg, #f5ebfa, #858287);
+        min-height: fit-content
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 20px;
+        width: 90%;
+    }
+    .opinion{
+        overflow: visible;
+        padding: 10%;
+    }
 }
